@@ -72,4 +72,4 @@ The model achieves the following performance on :
 
 | Model name  | PNSR    |     |
 | ----------- | ------- | --- |
-| Faster-rcnn | 27.2941 |     |
+| SwinIR | 27.2941 |     |
