@@ -16,6 +16,7 @@ pip install -r requirements.txt
 ```
 ## Dataset Preparation
 #### Prepare annotations
++ Use ```data_process/bicubic.py``` to downsample the training images by scale factor 3.
 + Use ```data_process/prepare_custom_datasets.py``` to resize and generate training and testing pairs.
 + In this assignment, high resolution images are resized to 96x96, low resolution images are resized to 32x32.
 + In this assignment, SwinIR structure provided in [cszn/KAIR](https://github.com/cszn/KAIR) is used. The training settings needs to be configured in ```train_swinir_sr_classical.json```.
