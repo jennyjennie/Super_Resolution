@@ -17,14 +17,14 @@
     "train": {
       "name": "train_dataset"           // just name
       , "dataset_type": "sr"         // "dncnn" | "dnpatch" | "fdncnn" | "ffdnet" | "sr" | "srmd" | "dpsr" | "plain" | "plainpatch" | "jpeg"
-      , "dataroot_H": "./datasets/train/hr_128"// path of H training dataset. DIV2K (800 training images)
-      , "dataroot_L": "./datasets/train/lr_128"              // path of L training dataset
+      , "dataroot_H": "./datasets/train/hr_96"// path of H training dataset. DIV2K (800 training images)
+      , "dataroot_L": "./datasets/train/lr_96"              // path of L training dataset
 
-      , "H_size": 128                   // 96/144|192/384 | 128/192/256/512. LR patch size is set to 48 or 64 when compared with RCAN or RRDB.
+      , "H_size": 96                   // 96/144|192/384 | 128/192/256/512. LR patch size is set to 48 or 64 when compared with RCAN or RRDB.
 
       , "dataloader_shuffle": true
       , "dataloader_num_workers": 8
-      , "dataloader_batch_size": 8      // batch size 1 | 16 | 32 | 48 | 64 | 128. Total batch size =4x8=32 in SwinIR
+      , "dataloader_batch_size": 16      // batch size 1 | 16 | 32 | 48 | 64 | 128. Total batch size =4x8=32 in SwinIR
     }
     , "test": {
       "name": "test_dataset"            // just name
